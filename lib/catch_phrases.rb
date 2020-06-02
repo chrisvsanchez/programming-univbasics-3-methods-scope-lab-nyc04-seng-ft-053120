@@ -15,6 +15,10 @@ def link
   puts phrase
 end
 
-def all_phrases
+def all_phrases do
+  it "puts out all of the previous catch phrases" do
+    expect{all_phrases}.to output(/Thank you Mario! But Our Princess Is In Another Castle!\n/).to_stdout
+  end
+end
   
 end
